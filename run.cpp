@@ -14,7 +14,7 @@ void run(){
                 encounter();
                 break;
             case 2:
-                std::cout << "test\n";
+                std::cout << "You start to search for items.\n";
                 break;
             default:
                 std::cout << "An error occured.\n";
