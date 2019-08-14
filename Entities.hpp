@@ -4,7 +4,7 @@
 
 void run();
 void encounter();
-int attack(int l, int s);
+// int attack(int d);
 int randNum(int r1, int r2);
 int randNum2(int r1, int r2);
 
@@ -16,24 +16,28 @@ private:
     int health;
     int maxHealth;
     int strength;
+    int damage;
 public:
     // Constructor
     Player();
     Player(std::string n, int l, int e, int h, int mh, int s);
 
     // Get values
-    std::string getName(){ return name;     }
-    int getLevel()       { return level;    }
-    int getExp()         { return exp;      }
-    int getHealth()      { return health;   }
-    int getMaxHealth()   { return maxHealth;}
-    int getStrength()    { return strength; }
+    std::string getName();
+    int getLevel();
+    int getExp();
+    int getHealth();
+    int getMaxHealth();
+    int getStrength();
+    int getDamage();
 
     // Set values
-    void setName(std::string n){ name = n;      }
-    void setLevel(int l)       { level = l;     }
-    void setExp(int e)         { exp = e;       }
-    void setHealth(int h)      { health = h;    }
-    void setMaxHealth(int mh)  { maxHealth = mh;}
-    void setStrength(int s)    { strength = s;  }
+    void setValues(std::string n, int e, int h, int mh, int s);
+    void setName(std::string n);
+    void setLevel(int l);
+    void setExp(int e);
+    void setHealth(int h);
+    void setMaxHealth(int mh);
+    void setStrength(int s);
+    void setDamage(int d);
 };
